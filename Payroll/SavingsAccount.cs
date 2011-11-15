@@ -2,6 +2,7 @@ using System;
 
 namespace Payroll
 {
+    //account type 200
     public class SavingsAccount : Account
     {
         private readonly int bankNumber;

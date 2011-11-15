@@ -22,6 +22,7 @@ namespace Payroll
                 case 300:
                     return new CheckingsAndSavingsAccount(bankNumber, accountNumber);
             }
+            //throws if account type is invalid
             throw new ArgumentException("account type not found", "accountType");
         }
 
