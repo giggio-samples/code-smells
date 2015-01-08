@@ -21,7 +21,8 @@ namespace Payroll
 
         public override void Credit(decimal amount)
         {
-            Console.WriteLine("Credit made on account {0} from bank number {1}, in the amount of {2}, from checkings account", accountNumber, bankNumber, amount);
+            var message = string.Format("Credit made on account {0} from bank number {1}, in the amount of {2}, from checkings account", accountNumber, bankNumber, amount);
+            Console.WriteLine(message);
         }
     }
 }
