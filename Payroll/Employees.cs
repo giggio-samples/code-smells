@@ -21,7 +21,7 @@ namespace Payroll
                         select e).SingleOrDefault();
             }
             return (from e in employees
-                    where e.Id == id && e.TerminationDate != null || e.SubsidiaryId != 999
+                    where e.Id == id && (e.TerminationDate != null || e.SubsidiaryId != 999)
                     select e).SingleOrDefault();
         }
 
